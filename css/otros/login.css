@@ -1,0 +1,140 @@
+body {
+    background-image: url(/img/fondo.jpg);
+    color: #ffffff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    width: 300px;
+    background-color: transparent; /* Quita el color de fondo */
+    border: none; /* Quita el borde */
+    box-shadow: none; /* Quita la sombra */
+    border-radius: 50%;
+    margin: 20px auto; /* Reduce el margen superior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#planet-image {
+    width: 200px; /* Ajusta el tamaño del planeta */
+}
+
+#login-form {
+    background-color: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad del fondo */
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 30px; /* Ajusta el espacio interior */
+    width: 400px;
+    margin: 20px auto; /* Reduce el margen superior */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#login-form h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 30px);
+    padding: 15px;
+    border: 2px white solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #111111;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6600;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff5e5b;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    25% {
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    75% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.parpadeo {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    40% {
+        transform: translateX(-30px);
+    }
+    60% {
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.bouncex {
+    animation: bounce 2s infinite;
+}
+
+.imagen-izquierda {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 400px;
+}
+
+.imagen-derecha {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 400px;
+}

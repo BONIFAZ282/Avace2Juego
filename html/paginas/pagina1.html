@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/paginas/pagina1.css">
+    <title>Nivel Facil</title>
+</head>
+
+<body>
+    <audio id="myAudio" loop autoplay>
+        <source src="/music/fondo.mp3" type="audio/mpeg">
+    </audio>
+    <div id="nombreJugador">
+        
+    </div>
+    <div id="areaTrabajo">
+
+    </div>
+    <div class="botones">
+        <button id="moveToPrev"><i class="fa-solid fa-chevron-left"></i> Anterior</button>
+        <button id="moveToNext"><i class="fa-solid fa-chevron-right"></i> Siguiente</button>
+        |
+        <button id="togglePlaneta1">Planeta1</button>
+        <button id="togglePlaneta2">Planeta2</button>
+        <button id="togglePlaneta3">Planeta3</button>
+        <button id="togglePlaneta4">Planeta4</button>
+        |
+        <button id="togglePregunta">Pregunta</button>
+    </div>
+
+
+    <!-- PREGUNTAS -->
+    <div class="contenedor_preguntas" id="pregunt">
+        <div class="puntaje" id="puntaje">
+
+        </div>
+        <div class="encabezado">
+            <div class="categoria" id="categoria">
+            </div>
+            <div class="numero" id="numero"></div>
+            <div class="pregunta" id="pregunta">
+            </div>
+            <img src="#" class="imagen" id="imagen">
+        </div>
+        <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
+        <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+        <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+        <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+    </div>
+
+    <div class="galaxia1">
+        <h2>Nos encontramos en el sistema Solar</h2>
+        <div class="contenido">
+            <div class="descripcion">
+                <p>¡El sistema Solar está en peligro y necesita tu valentía! Debes cruzar todos los planetas para
+                    salvarlos y
+                    recopilar datos secretos de cada uno. ¿Estás listo para la aventura intergaláctica?</p>
+            </div>
+        </div>
+        <p>Supera los ejercicios para pasar al siguiente nivel</p>
+        <!-- Agrega más información interesante sobre Marte aquí -->
+        <button id="comienzaAventura">¡Comienza tu misión espacial!</button>
+    </div>
+
+
+    <!---------------------- INFORMACIÓN DE LOS PLANETAS ---------------------->
+
+    <div class="mundos" id="planeta1">
+        <h2>1° Planeta liberado: Mercurio</h2>
+        <div class="contenido">
+            <img src="/img/mercurio.png" alt="Marte">
+            <div class="descripcion">
+                <p>Mercurio es el planeta más cercano al Sol y se calienta muchísimo durante el día, ¡pero hace tanto
+                    frío por la noche que el hielo podría formarse! También, un día en Mercurio es más corto que un día
+                    en la Tierra, ¡dura solo unas 59 veces más corto! 😄</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mundos2" id="planeta2">
+        <h2>2° Planeta liberado: Venus</h2>
+        <div class="contenido">
+            <img src="/img/venus.png" alt="Marte">
+            <div class="descripcion">
+                <p>Venus es tan brillante que se le llama la "Estrella de la Tarde" o la "Estrella de la Mañana". Pero
+                    ten cuidado, ¡Venus es tan caliente que podría derretir plomo! Además, tiene una atmósfera densa que
+                    hace que su superficie sea un lugar muy inhóspito.😄</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mundos3" id="planeta3">
+        <h2>3° Planeta liberado: Tierra</h2>
+        <div class="contenido">
+            <img src="/img/tierra.png" alt="Marte">
+            <div class="descripcion">
+                <p>¡Este es nuestro planeta! Es el único conocido con vida. También tiene un amigo llamado "La Luna" que
+                    gira a su alrededor. 😄</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mundos4" id="planeta4">
+        <h2>4° Planeta liberado: marte</h2>
+        <div class="contenido">
+            <img src="/img/marte.png" alt="Marte">
+            <div class="descripcion">
+                <p>Marte es el cuarto planeta del sistema solar, ¡y es conocido como el "planeta rojo" por su color!
+                    Pero, ¿sabías que también es conocido como el "planeta de los extraterrestres"? 😄</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/pagina1/nave.js"></script>
+    <script src="/js/pagina1/preguntas.js"></script>
+    <script src="/js/otros/sonidos.js"></script>
+</body>
+
+</html>

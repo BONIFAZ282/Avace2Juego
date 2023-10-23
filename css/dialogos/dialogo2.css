@@ -1,0 +1,253 @@
+body {
+    background-image: url(/img/fondo.jpg);
+    color: #ffffff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.astronauta,
+.alienigenas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Agregar animación "bounce" a la imagen del astronauta */
+.grupo_astronauta img {
+    width: 200px;
+    animation: bounce 0.6s infinite alternate;
+}
+
+/* Definir la animación "bounce" */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Efectos para las imágenes de los alienígenas */
+.grupo_alienigena img {
+    width: 200px;
+    animation: scaleAnimation 2s infinite alternate;
+    /* Aplica la animación */
+}
+
+/* Define la animación llamada scaleAnimation */
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+        /* Escala normal al inicio */
+    }
+
+    100% {
+        transform: scale(1.1);
+        /* Escala al 110% al final */
+    }
+}
+
+.grupo_alienigena {
+    margin-top: 50px;
+}
+
+.grupo_astronauta {
+    margin-top: 20px;
+}
+
+/****************************************************************/
+/*************************** DIALOGOS ***************************/
+/***************************************************************/
+
+/******** DIALOGO1 ********/
+.dialogo1 {
+    background-color: #0E103D;
+    border: 5px solid #00D4FF;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.dialogo1::before {
+    content: "";
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: #00D4FF transparent transparent transparent;
+    left: 44%;
+    transform: translateX(-50) rotate(180deg);
+    bottom: -65px;
+}
+
+
+.dialogo1,
+.dialogo2,
+.dialogo3,
+.dialogo4,
+.dialogoAstro1,
+.dialogoAstro2,
+.dialogoCombi p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+/******** DIALOGO2 ********/
+.dialogo2 {
+    background-color: #0E103D;
+    border: 5px solid #00D4FF;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 250px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.dialogo2::before {
+    content: "";
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: #00D4FF transparent transparent transparent;
+    left: 23%;
+    transform: translateX(-50) rotate(180deg);
+    bottom: -65px;
+}
+
+/******** DIALOGO3 ********/
+.dialogo3 {
+    background-color: #0E103D;
+    border: 5px solid #00D4FF;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 120px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.dialogo3::before {
+    content: "";
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: #00D4FF transparent transparent transparent;
+    left: 77%;
+    transform: translateX(-50) rotate(180deg);
+    bottom: -65px;
+}
+
+/******** DIALOGO COMBINADO ********/
+.dialogoCombi {
+    background-color: #0E103D;
+    border: 5px solid #00D4FF;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    width: 600px;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.dialogoCombi::before {
+    content: "";
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: #00D4FF transparent transparent transparent;
+    left: 77%;
+    transform: translateX(-50) rotate(180deg);
+    bottom: -65px;
+}
+
+.dialogoCombi::after {
+    content: "";
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: #00D4FF transparent transparent transparent;
+    left: 94px;
+    bottom: -65px;
+}
+
+/******** DIALOGO ASTRONAUTA 1 ********/
+.dialogoAstro1 {
+    background-color: #0E103D;
+    border: 5px solid #00D4FF;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 300px;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.dialogoAstro1::before {
+    content: "";
+    position: absolute;
+    border-width: 25px;
+    border-style: solid;
+    border-color: #00D4FF transparent transparent transparent;
+    left: 42%;
+    transform: translateX(-50) rotate(180deg);
+    bottom: -55px;
+}
+
+/****************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+img {
+    width: 200px;
+}
+
+.btn-siguiente {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-siguiente a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-siguiente:hover {
+    background-color: #ff5e5b;
+    transform: scale(1.05);
+}

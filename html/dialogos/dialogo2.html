@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxia en Peligro</title>
+    <link rel="stylesheet" href="/css/dialogos/dialogo2.css">
+</head>
+
+<body>
+    <audio id="myAudio" loop autoplay>
+        <source src="/music/alien.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <div class="alienigenas">
+            <div class="dialogo1">
+                <p>¡Gracias, astronauta! Has salvado nuestra galaxia.</p>
+                <button class="btn-siguiente" id="dialogo1">
+                    <a href="#">Siguiente</a>
+                </button>
+            </div>
+            <div class="dialogo2">
+                <p>Estamos en deuda contigo. Ten cuidado en tus futuras misiones.</p>
+                <button class="btn-siguiente" id="dialogo2">
+                    <a href="#">Siguiente</a>
+                </button>
+            </div>
+
+            <div class="dialogoCombi">
+                <p>GRACIAS POR TODO</p>
+                <button class="btn-siguiente" id="dialogoCombi">
+                    <a href="#">Siguiente</a>
+                </button>
+            </div>
+
+            <div class="grupo_alienigena">
+                <img src="/img/alien1.png" alt="Alienígenas">
+                <img src="/img/alien2.png" alt="Alienígenas">
+                <img src="/img/alien3.png" alt="Alienígenas">
+            </div>
+
+        </div>
+        <div class="astronauta">
+            <div class="dialogoAstro1">
+                <p>Siempre estaré dispuesto a ayudar. Cuídense, amigos.</p>
+                <button class="btn-siguiente" id="dialogoAstro1">
+                    <a href="#">Siguiente</a>
+                </button>
+            </div>
+            <div class="grupo_astronauta">
+                <img src="/img/astronauta_130x150.png" alt="Astronauta">
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/dialogos/dialogo2.js"></script>
+    <script src="/js/otros/sonidos.js"></script>
+</body>
+
+</html>

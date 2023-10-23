@@ -1,0 +1,68 @@
+[
+    {
+        "categoria": "suma",
+        "pregunta": "¿Cuánto es 5 + 3?",
+        "respuesta": "8",
+        "incorrecta1": "6",
+        "incorrecta2": "10",
+        "incorrecta3": "7",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "suma",
+        "pregunta": "¿Cuánto es 6 - 1?",
+        "respuesta": "5",
+        "incorrecta1": "6",
+        "incorrecta2": "7",
+        "incorrecta3": "10",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "suma",
+        "pregunta": "¿Cuánto es 7 + 2?",
+        "respuesta": "9",
+        "incorrecta1": "5",
+        "incorrecta2": "10",
+        "incorrecta3": "8"
+    },
+    {
+        "categoria": "resta",
+        "pregunta": "¿Cuánto es 12 - 4?",
+        "respuesta": "8",
+        "incorrecta1": "6",
+        "incorrecta2": "10",
+        "incorrecta3": "2"
+    },
+    {
+        "categoria": "suma",
+        "pregunta": "¿Cuánto es 9 + 6?",
+        "respuesta": "15",
+        "incorrecta1": "13",
+        "incorrecta2": "10",
+        "incorrecta3": "12"
+    },
+    {
+        "categoria": "resta",
+        "pregunta": "¿Cuánto es 15 - 7?",
+        "respuesta": "8",
+        "incorrecta1": "10",
+        "incorrecta2": "6",
+        "incorrecta3": "9"
+    },
+    {
+        "categoria": "suma",
+        "pregunta": "¿Cuánto es 3 + 4?",
+        "respuesta": "7",
+        "incorrecta1": "6",
+        "incorrecta2": "8",
+        "incorrecta3": "5"
+    },
+    {
+        "categoria": "resta",
+        "pregunta": "¿Cuánto es 10 - 3?",
+        "respuesta": "7",
+        "incorrecta1": "6",
+        "incorrecta2": "5",
+        "incorrecta3": "8"
+    }
+]

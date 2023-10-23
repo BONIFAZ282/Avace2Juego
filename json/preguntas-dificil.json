@@ -1,0 +1,42 @@
+[
+    {
+        "categoria": "ecuación de primer grado",
+        "pregunta": "¿Cuál es la solución de la ecuación 2x + 5 = 11?",
+        "respuesta": "x = 3",
+        "incorrecta1": "x = 6",
+        "incorrecta2": "x = 2",
+        "incorrecta3": "x = 4"
+    },
+    {
+        "categoria": "ecuación de primer grado",
+        "pregunta": "Resuelve la ecuación 3y - 7 = 8.",
+        "respuesta": "y = 5",
+        "incorrecta1": "y = 15",
+        "incorrecta2": "y = 3",
+        "incorrecta3": "y = 12"
+    },
+    {
+        "categoria": "ecuación de primer grado",
+        "pregunta": "Encuentra la solución de la ecuación 4a + 9 = 25.",
+        "respuesta": "a = 4",
+        "incorrecta1": "a = 5",
+        "incorrecta2": "a = 3",
+        "incorrecta3": "a = 6"
+    },
+    {
+        "categoria": "ecuación de primer grado",
+        "pregunta": "Resuelve la ecuación 2b - 10 = 12.",
+        "respuesta": "b = 11",
+        "incorrecta1": "b = 9",
+        "incorrecta2": "b = 7",
+        "incorrecta3": "b = 10"
+    },
+    {
+        "categoria": "ecuación de primer grado",
+        "pregunta": "¿Cuál es la solución de la ecuación 5c - 3 = 22?",
+        "respuesta": "c = 5",
+        "incorrecta1": "c = 6",
+        "incorrecta2": "c = 4",
+        "incorrecta3": "c = 7"
+    }
+]

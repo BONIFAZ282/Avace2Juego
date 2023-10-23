@@ -1,0 +1,92 @@
+* {
+    transition: all 0.3s;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-image: url('/img/fondo.jpg');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    color: white;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.marco {
+    border-radius: 30px;
+    background: black;
+    padding: 30px;
+    border: 5px solid white;
+    width: 350px;
+}
+.botones-contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 60%;
+    padding: 20px;
+}
+
+.datos-nino {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+.datos-nino h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.campo label {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn-registrar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00D4FF; /* Color azul brillante */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-registrar:hover {
+    background-color: #00C2E0; /* Color azul más claro al pasar el mouse */
+}
